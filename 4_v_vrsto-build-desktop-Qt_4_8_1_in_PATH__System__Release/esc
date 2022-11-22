@@ -1,0 +1,377 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 84.86     54.03    54.03 105937088     0.00     0.00  MainWindow::oceni(MainWindow::tab const&)
+  8.11     59.19     5.16 12388561     0.00     0.00  MainWindow::preverjaj(MainWindow::tab)
+  4.58     62.11     2.92 118103762     0.00     0.00  MainWindow::Odigraj(MainWindow::tab&, int, int)
+  2.39     63.63     1.52       12     0.13     5.30  MainWindow::minimax(MainWindow::tab, int, int)
+  0.04     63.66     0.03                             MainWindow::on_Ocena_clicked()
+  0.03     63.68     0.02                             MainWindow::on_Lepi_clicked()
+  0.02     63.69     0.01       12     0.00     0.00  MainWindow::lepi(MainWindow::tab)
+  0.00     63.69     0.00     4730     0.00     0.00  int qMetaTypeId<QBrush>(QBrush*)
+  0.00     63.69     0.00     4730     0.00     0.00  QBrush qvariant_cast<QBrush>(QVariant const&)
+  0.00     63.69     0.00     4730     0.00     0.00  QMetaTypeId2<QBrush>::qt_metatype_id()
+  0.00     63.69     0.00     4730     0.00     0.00  QTableWidgetItem::background() const
+  0.00     63.69     0.00     1412     0.00     0.00  QTableWidgetItem::setBackground(QBrush const&)
+  0.00     63.69     0.00      374     0.00     0.00  qt_noop()
+  0.00     63.69     0.00      362     0.00     0.00  QScopedPointer<QObjectData, QScopedPointerDeleter<QObjectData> >::operator->() const
+  0.00     63.69     0.00       42     0.00     0.00  QBasicAtomicInt::deref()
+  0.00     63.69     0.00       42     0.00     0.00  QString::~QString()
+  0.00     63.69     0.00       24     0.00     0.00  MainWindow::kopiraj()
+  0.00     63.69     0.00       16     0.00     0.00  QRect::QRect(int, int, int, int)
+  0.00     63.69     0.00       12     0.00     5.30  MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**)
+  0.00     63.69     0.00       12     0.00     5.30  MainWindow::klik(int)
+  0.00     63.69     0.00        4     0.00     5.30  MainWindow::on_push_4_clicked()
+  0.00     63.69     0.00        4     0.00     0.00  QString::QString(char const*)
+  0.00     63.69     0.00        2     0.00     5.30  MainWindow::on_push_0_clicked()
+  0.00     63.69     0.00        2     0.00     5.30  MainWindow::on_push_1_clicked()
+  0.00     63.69     0.00        2     0.00     5.30  MainWindow::on_push_3_clicked()
+  0.00     63.69     0.00        2     0.00     0.00  QColor::QColor(int, int, int, int)
+  0.00     63.69     0.00        2     0.00     0.00  QFlags<Qt::WindowType>::QFlags(void**)
+  0.00     63.69     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN10MainWindowC2EP7QWidget
+  0.00     63.69     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     63.69     0.00        1     0.00     5.30  MainWindow::on_push_2_clicked()
+  0.00     63.69     0.00        1     0.00     5.30  MainWindow::on_push_6_clicked()
+  0.00     63.69     0.00        1     0.00     0.00  MainWindow::msBox()
+  0.00     63.69     0.00        1     0.00     0.00  MainWindow::pocisti()
+  0.00     63.69     0.00        1     0.00     0.00  MainWindow::MainWindow(QWidget*)
+  0.00     63.69     0.00        1     0.00     0.00  MainWindow::~MainWindow()
+  0.00     63.69     0.00        1     0.00     0.00  Ui_MainWindow::retranslateUi(QMainWindow*)
+  0.00     63.69     0.00        1     0.00     0.00  Ui_MainWindow::setupUi(QMainWindow*)
+  0.00     63.69     0.00        1     0.00     0.00  QTableWidgetItem::setForeground(QBrush const&)
+  0.00     63.69     0.00        1     0.00     0.00  QSize::QSize(int, int)
+  0.00     63.69     0.00        1     0.00     0.00  QWidget::show()
+  0.00     63.69     0.00        1     0.00     0.00  QWidget::resize(int, int)
+  0.00     63.69     0.00        1     0.00     0.00  QString::isEmpty() const
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.02% of 63.69 seconds
+
+index % time    self  children    called     name
+                0.00   63.64      12/12          MainWindow::qt_metacall(QMetaObject::Call, int, void**) [2]
+[1]     99.9    0.00   63.64      12         MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) [1]
+                0.00   21.21       4/4           MainWindow::on_push_4_clicked() [6]
+                0.00   10.61       2/2           MainWindow::on_push_0_clicked() [7]
+                0.00   10.61       2/2           MainWindow::on_push_1_clicked() [8]
+                0.00   10.61       2/2           MainWindow::on_push_3_clicked() [9]
+                0.00    5.30       1/1           MainWindow::on_push_2_clicked() [10]
+                0.00    5.30       1/1           MainWindow::on_push_6_clicked() [11]
+                0.00    0.00      12/374         qt_noop() [27]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     99.9    0.00   63.64                 MainWindow::qt_metacall(QMetaObject::Call, int, void**) [2]
+                0.00   63.64      12/12          MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) [1]
+-----------------------------------------------
+                0.00    5.30       1/12          MainWindow::on_push_2_clicked() [10]
+                0.00    5.30       1/12          MainWindow::on_push_6_clicked() [11]
+                0.00   10.61       2/12          MainWindow::on_push_0_clicked() [7]
+                0.00   10.61       2/12          MainWindow::on_push_1_clicked() [8]
+                0.00   10.61       2/12          MainWindow::on_push_3_clicked() [9]
+                0.00   21.21       4/12          MainWindow::on_push_4_clicked() [6]
+[3]     99.9    0.00   63.64      12         MainWindow::klik(int) [3]
+                1.52   62.11      12/12          MainWindow::minimax(MainWindow::tab, int, int) [4]
+                0.01    0.00      12/12          MainWindow::lepi(MainWindow::tab) [16]
+                0.00    0.00      24/12388561     MainWindow::preverjaj(MainWindow::tab) [12]
+                0.00    0.00      12/118103762     MainWindow::Odigraj(MainWindow::tab&, int, int) [13]
+                0.00    0.00      32/4730        QTableWidgetItem::background() const [25]
+                0.00    0.00      24/24          MainWindow::kopiraj() [31]
+                0.00    0.00      12/1412        QTableWidgetItem::setBackground(QBrush const&) [26]
+                0.00    0.00       1/1           MainWindow::msBox() [38]
+-----------------------------------------------
+                             11810363             MainWindow::minimax(MainWindow::tab, int, int) [4]
+                1.52   62.11      12/12          MainWindow::klik(int) [3]
+[4]     99.9    1.52   62.11      12+11810363 MainWindow::minimax(MainWindow::tab, int, int) [4]
+               54.03    0.00 105937088/105937088     MainWindow::oceni(MainWindow::tab const&) [5]
+                5.16    0.00 12388537/12388561     MainWindow::preverjaj(MainWindow::tab) [12]
+                2.92    0.00 118103750/118103762     MainWindow::Odigraj(MainWindow::tab&, int, int) [13]
+                             11810363             MainWindow::minimax(MainWindow::tab, int, int) [4]
+-----------------------------------------------
+               54.03    0.00 105937088/105937088     MainWindow::minimax(MainWindow::tab, int, int) [4]
+[5]     84.8   54.03    0.00 105937088         MainWindow::oceni(MainWindow::tab const&) [5]
+-----------------------------------------------
+                0.00   21.21       4/4           MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) [1]
+[6]     33.3    0.00   21.21       4         MainWindow::on_push_4_clicked() [6]
+                0.00   21.21       4/12          MainWindow::klik(int) [3]
+-----------------------------------------------
+                0.00   10.61       2/2           MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) [1]
+[7]     16.7    0.00   10.61       2         MainWindow::on_push_0_clicked() [7]
+                0.00   10.61       2/12          MainWindow::klik(int) [3]
+-----------------------------------------------
+                0.00   10.61       2/2           MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) [1]
+[8]     16.7    0.00   10.61       2         MainWindow::on_push_1_clicked() [8]
+                0.00   10.61       2/12          MainWindow::klik(int) [3]
+-----------------------------------------------
+                0.00   10.61       2/2           MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) [1]
+[9]     16.7    0.00   10.61       2         MainWindow::on_push_3_clicked() [9]
+                0.00   10.61       2/12          MainWindow::klik(int) [3]
+-----------------------------------------------
+                0.00    5.30       1/1           MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) [1]
+[10]     8.3    0.00    5.30       1         MainWindow::on_push_2_clicked() [10]
+                0.00    5.30       1/12          MainWindow::klik(int) [3]
+-----------------------------------------------
+                0.00    5.30       1/1           MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) [1]
+[11]     8.3    0.00    5.30       1         MainWindow::on_push_6_clicked() [11]
+                0.00    5.30       1/12          MainWindow::klik(int) [3]
+-----------------------------------------------
+                0.00    0.00      24/12388561     MainWindow::klik(int) [3]
+                5.16    0.00 12388537/12388561     MainWindow::minimax(MainWindow::tab, int, int) [4]
+[12]     8.1    5.16    0.00 12388561         MainWindow::preverjaj(MainWindow::tab) [12]
+-----------------------------------------------
+                0.00    0.00      12/118103762     MainWindow::klik(int) [3]
+                2.92    0.00 118103750/118103762     MainWindow::minimax(MainWindow::tab, int, int) [4]
+[13]     4.6    2.92    0.00 118103762         MainWindow::Odigraj(MainWindow::tab&, int, int) [13]
+-----------------------------------------------
+                                                 <spontaneous>
+[14]     0.0    0.03    0.00                 MainWindow::on_Ocena_clicked() [14]
+-----------------------------------------------
+                                                 <spontaneous>
+[15]     0.0    0.02    0.00                 MainWindow::on_Lepi_clicked() [15]
+-----------------------------------------------
+                0.01    0.00      12/12          MainWindow::klik(int) [3]
+[16]     0.0    0.01    0.00      12         MainWindow::lepi(MainWindow::tab) [16]
+                0.00    0.00    1200/1412        QTableWidgetItem::setBackground(QBrush const&) [26]
+-----------------------------------------------
+                0.00    0.00    4730/4730        QBrush qvariant_cast<QBrush>(QVariant const&) [23]
+[22]     0.0    0.00    0.00    4730         int qMetaTypeId<QBrush>(QBrush*) [22]
+                0.00    0.00    4730/4730        QMetaTypeId2<QBrush>::qt_metatype_id() [24]
+-----------------------------------------------
+                0.00    0.00    4730/4730        QTableWidgetItem::background() const [25]
+[23]     0.0    0.00    0.00    4730         QBrush qvariant_cast<QBrush>(QVariant const&) [23]
+                0.00    0.00    4730/4730        int qMetaTypeId<QBrush>(QBrush*) [22]
+-----------------------------------------------
+                0.00    0.00    4730/4730        int qMetaTypeId<QBrush>(QBrush*) [22]
+[24]     0.0    0.00    0.00    4730         QMetaTypeId2<QBrush>::qt_metatype_id() [24]
+-----------------------------------------------
+                0.00    0.00      32/4730        MainWindow::klik(int) [3]
+                0.00    0.00    4698/4730        MainWindow::kopiraj() [31]
+[25]     0.0    0.00    0.00    4730         QTableWidgetItem::background() const [25]
+                0.00    0.00    4730/4730        QBrush qvariant_cast<QBrush>(QVariant const&) [23]
+-----------------------------------------------
+                0.00    0.00      12/1412        MainWindow::klik(int) [3]
+                0.00    0.00     100/1412        MainWindow::pocisti() [39]
+                0.00    0.00     100/1412        Ui_MainWindow::setupUi(QMainWindow*) [43]
+                0.00    0.00    1200/1412        MainWindow::lepi(MainWindow::tab) [16]
+[26]     0.0    0.00    0.00    1412         QTableWidgetItem::setBackground(QBrush const&) [26]
+-----------------------------------------------
+                0.00    0.00      12/374         MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) [1]
+                0.00    0.00     362/374         QScopedPointer<QObjectData, QScopedPointerDeleter<QObjectData> >::operator->() const [28]
+[27]     0.0    0.00    0.00     374         qt_noop() [27]
+-----------------------------------------------
+                0.00    0.00     362/362         MainWindow::metaObject() const [69]
+[28]     0.0    0.00    0.00     362         QScopedPointer<QObjectData, QScopedPointerDeleter<QObjectData> >::operator->() const [28]
+                0.00    0.00     362/374         qt_noop() [27]
+-----------------------------------------------
+                0.00    0.00      42/42          QString::~QString() [30]
+[29]     0.0    0.00    0.00      42         QBasicAtomicInt::deref() [29]
+-----------------------------------------------
+                0.00    0.00       4/42          MainWindow::msBox() [38]
+                0.00    0.00      15/42          Ui_MainWindow::retranslateUi(QMainWindow*) [42]
+                0.00    0.00      23/42          Ui_MainWindow::setupUi(QMainWindow*) [43]
+[30]     0.0    0.00    0.00      42         QString::~QString() [30]
+                0.00    0.00      42/42          QBasicAtomicInt::deref() [29]
+-----------------------------------------------
+                0.00    0.00      24/24          MainWindow::klik(int) [3]
+[31]     0.0    0.00    0.00      24         MainWindow::kopiraj() [31]
+                0.00    0.00    4698/4730        QTableWidgetItem::background() const [25]
+-----------------------------------------------
+                0.00    0.00      16/16          Ui_MainWindow::setupUi(QMainWindow*) [43]
+[32]     0.0    0.00    0.00      16         QRect::QRect(int, int, int, int) [32]
+-----------------------------------------------
+                0.00    0.00       4/4           MainWindow::msBox() [38]
+[33]     0.0    0.00    0.00       4         QString::QString(char const*) [33]
+-----------------------------------------------
+                0.00    0.00       2/2           Ui_MainWindow::setupUi(QMainWindow*) [43]
+[34]     0.0    0.00    0.00       2         QColor::QColor(int, int, int, int) [34]
+-----------------------------------------------
+                0.00    0.00       1/2           MainWindow::MainWindow(QWidget*) [40]
+                0.00    0.00       1/2           Ui_MainWindow::setupUi(QMainWindow*) [43]
+[35]     0.0    0.00    0.00       2         QFlags<Qt::WindowType>::QFlags(void**) [35]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [86]
+[36]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN10MainWindowC2EP7QWidget [36]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN10MainWindowC2EP7QWidget [36]
+[37]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           MainWindow::klik(int) [3]
+[38]     0.0    0.00    0.00       1         MainWindow::msBox() [38]
+                0.00    0.00       4/4           QString::QString(char const*) [33]
+                0.00    0.00       4/42          QString::~QString() [30]
+                0.00    0.00       1/1           MainWindow::pocisti() [39]
+-----------------------------------------------
+                0.00    0.00       1/1           MainWindow::msBox() [38]
+[39]     0.0    0.00    0.00       1         MainWindow::pocisti() [39]
+                0.00    0.00     100/1412        QTableWidgetItem::setBackground(QBrush const&) [26]
+-----------------------------------------------
+                0.00    0.00       1/1           main [21]
+[40]     0.0    0.00    0.00       1         MainWindow::MainWindow(QWidget*) [40]
+                0.00    0.00       1/2           QFlags<Qt::WindowType>::QFlags(void**) [35]
+                0.00    0.00       1/1           Ui_MainWindow::setupUi(QMainWindow*) [43]
+-----------------------------------------------
+                0.00    0.00       1/1           main [21]
+[41]     0.0    0.00    0.00       1         MainWindow::~MainWindow() [41]
+-----------------------------------------------
+                0.00    0.00       1/1           Ui_MainWindow::setupUi(QMainWindow*) [43]
+[42]     0.0    0.00    0.00       1         Ui_MainWindow::retranslateUi(QMainWindow*) [42]
+                0.00    0.00      15/42          QString::~QString() [30]
+-----------------------------------------------
+                0.00    0.00       1/1           MainWindow::MainWindow(QWidget*) [40]
+[43]     0.0    0.00    0.00       1         Ui_MainWindow::setupUi(QMainWindow*) [43]
+                0.00    0.00     100/1412        QTableWidgetItem::setBackground(QBrush const&) [26]
+                0.00    0.00      23/42          QString::~QString() [30]
+                0.00    0.00      16/16          QRect::QRect(int, int, int, int) [32]
+                0.00    0.00       2/2           QColor::QColor(int, int, int, int) [34]
+                0.00    0.00       1/1           QString::isEmpty() const [48]
+                0.00    0.00       1/1           QWidget::resize(int, int) [47]
+                0.00    0.00       1/2           QFlags<Qt::WindowType>::QFlags(void**) [35]
+                0.00    0.00       1/1           QTableWidgetItem::setForeground(QBrush const&) [44]
+                0.00    0.00       1/1           Ui_MainWindow::retranslateUi(QMainWindow*) [42]
+-----------------------------------------------
+                0.00    0.00       1/1           Ui_MainWindow::setupUi(QMainWindow*) [43]
+[44]     0.0    0.00    0.00       1         QTableWidgetItem::setForeground(QBrush const&) [44]
+-----------------------------------------------
+                0.00    0.00       1/1           QWidget::resize(int, int) [47]
+[45]     0.0    0.00    0.00       1         QSize::QSize(int, int) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           main [21]
+[46]     0.0    0.00    0.00       1         QWidget::show() [46]
+-----------------------------------------------
+                0.00    0.00       1/1           Ui_MainWindow::setupUi(QMainWindow*) [43]
+[47]     0.0    0.00    0.00       1         QWidget::resize(int, int) [47]
+                0.00    0.00       1/1           QSize::QSize(int, int) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           Ui_MainWindow::setupUi(QMainWindow*) [43]
+[48]     0.0    0.00    0.00       1         QString::isEmpty() const [48]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [36] _GLOBAL__sub_I__ZN10MainWindowC2EP7QWidget (mainwindow.cpp) [3] MainWindow::klik(int) [29] QBasicAtomicInt::deref()
+  [22] int qMetaTypeId<QBrush>(QBrush*) [16] MainWindow::lepi(MainWindow::tab) [26] QTableWidgetItem::setBackground(QBrush const&)
+  [23] QBrush qvariant_cast<QBrush>(QVariant const&) [38] MainWindow::msBox() [44] QTableWidgetItem::setForeground(QBrush const&)
+  [37] __static_initialization_and_destruction_0(int, int) (mainwindow.cpp) [5] MainWindow::oceni(MainWindow::tab const&) [32] QRect::QRect(int, int, int, int)
+  [27] qt_noop()              [13] MainWindow::Odigraj(MainWindow::tab&, int, int) [45] QSize::QSize(int, int)
+  [15] MainWindow::on_Lepi_clicked() [31] MainWindow::kopiraj() [34] QColor::QColor(int, int, int, int)
+  [14] MainWindow::on_Ocena_clicked() [4] MainWindow::minimax(MainWindow::tab, int, int) [35] QFlags<Qt::WindowType>::QFlags(void**)
+   [7] MainWindow::on_push_0_clicked() [39] MainWindow::pocisti() [33] QString::QString(char const*)
+   [8] MainWindow::on_push_1_clicked() [12] MainWindow::preverjaj(MainWindow::tab) [30] QString::~QString()
+  [10] MainWindow::on_push_2_clicked() [40] MainWindow::MainWindow(QWidget*) [46] QWidget::show()
+   [9] MainWindow::on_push_3_clicked() [41] MainWindow::~MainWindow() [47] QWidget::resize(int, int)
+   [6] MainWindow::on_push_4_clicked() [24] QMetaTypeId2<QBrush>::qt_metatype_id() [28] QScopedPointer<QObjectData, QScopedPointerDeleter<QObjectData> >::operator->() const
+  [11] MainWindow::on_push_6_clicked() [42] Ui_MainWindow::retranslateUi(QMainWindow*) [25] QTableWidgetItem::background() const
+   [1] MainWindow::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) [43] Ui_MainWindow::setupUi(QMainWindow*) [48] QString::isEmpty() const
