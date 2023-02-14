@@ -1,1 +1,2 @@
 
+Narejeno v Qmake
